@@ -8,5 +8,3 @@ WORKDIR /var/www/html
 UN unzip vertex.zip
 RUN -rvf markups-vertex/* .
 RUN rm -rf_MACOSX markups-vertex vertex.zip /var/www/html/
-CMD ["/usr/sbin/httpd","-D","FORGROUND"]
-EXPOSE 80
